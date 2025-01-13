@@ -1,0 +1,87 @@
+section {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem
+}
+
+.half-text {
+    width: 70%;
+    margin-bottom: 2rem
+}
+
+.section-module-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: -1rem;
+    margin-right: -1rem
+}
+
+.section-module-items .module-item {
+    padding: 0 1rem;
+    position: relative
+}
+
+.section-module-items .module-item .flag-item {
+    position: absolute;
+    right: 50%;
+    top: -18px;
+    transform: translate(50%);
+    background: var(--proplan);
+    color: var(--blue);
+    padding: 9px;
+    box-sizing: border-box;
+    font-size: .75rem;
+    width: 140px;
+    text-align: center;
+    z-index: 1;
+    color: #fff
+}
+
+.section-module-items .module-item p {
+    font-size: .8rem;
+    margin-top: 0;
+    margin-bottom: 5px
+}
+
+.section-module-items .module-item ul {
+    color: var(--dark-gray);
+    font-size: .8rem;
+    margin: 0;
+    padding: 0 1rem
+}
+
+.section-module-items .module-item .module-item-icon {
+    background-color: var(--box-gray);
+    border: 1px solid var(--border-gray);
+    margin: 0 auto 1rem;
+    height: 0;
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative
+}
+
+.section-module-items .module-item .module-item-icon i {
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    position: absolute
+}
+
+.section-center {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    max-width: 700px;
+    margin: 0 auto;
+    align-items: center
+}
+
+.right-icon-legal {
+    text-align: right;
+    display: block;
+    margin-bottom: 2rem
+}
+
+.dark-legal {
+    color: #fff;
+    white-space: nowrap;
+    font-size: .6rem
+}

@@ -1,0 +1,148 @@
+section {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem
+}
+
+.half-text {
+    width: 60%;
+    margin-bottom: 2rem
+}
+
+.section-plans-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: -1rem;
+    margin-right: -1rem;
+    justify-items: center;
+    margin-bottom: .5rem
+}
+
+.section-plans-items .plan-item {
+    border-radius: 28px;
+    background: #F8F8F8;
+    overflow: hidden;
+    max-width: 260px;
+    width: 90%
+}
+
+.section-plans-items .plan-item .header-plan {
+    padding: 1rem 0
+}
+
+.section-plans-items .plan-item .header-plan .name-plan {
+    display: block;
+    padding-left: 1.5rem
+}
+
+.section-plans-items .plan-item .header-plan .name-plan h4 {
+    font-size: 1.5rem;
+    color: var(--blue)
+}
+
+.section-plans-items .plan-item .header-plan .notice-price-plan {
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+    padding: 2rem 1.5rem
+}
+
+.section-plans-items .plan-item .header-plan .price-plan {
+    font-weight: 700;
+    font-size: 4.5rem;
+    text-align: center;
+    width: 100%;
+    display: block;
+    line-height: .9;
+    margin: 1rem auto;
+    letter-spacing: -2px
+}
+
+.section-plans-items .plan-item .header-plan .price-plan sup {
+    font-size: 60%
+}
+
+.section-plans-items .plan-item .header-plan .price-plan span {
+    font-size: .8rem;
+    display: block;
+    font-weight: 400;
+    letter-spacing: 0;
+    margin-top: 12px
+}
+
+.section-plans-items .plan-item .header-plan .button {
+    margin: 0 auto;
+    display: block;
+    max-width: 180px
+}
+
+.section-plans-items .plan-item .content-plan {
+    width: 85%;
+    margin: 0 auto;
+    padding: 1rem 0
+}
+
+.section-plans-items .plan-item .content-plan ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.section-plans-items .plan-item .content-plan ul li {
+    position: relative;
+    padding-left: 1.3rem;
+    font-size: .85rem;
+    margin-bottom: 2px
+}
+
+.section-plans-items .plan-item .content-plan ul li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: var(--cyan);
+    border-radius: 50%;
+    left: 0;
+    bottom: 50%;
+    transform: translateY(50%)
+}
+
+.section-center {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    max-width: 700px;
+    margin: 0 auto;
+    align-items: center
+}
+
+.one-plan .header-plan {
+    background-color: var(--oneplan)
+}
+
+.one-plan .content-plan ul li:before {
+    background-color: var(--oneplan) !important
+}
+
+.basic-plan .header-plan {
+    background-color: var(--basicplan)
+}
+
+.basic-plan .content-plan ul li:before {
+    background-color: var(--basicplan) !important
+}
+
+.pro-plan .header-plan {
+    background-color: var(--proplan)
+}
+
+.pro-plan .content-plan ul li:before {
+    background-color: var(--proplan) !important
+}
+
+.enterprise-plan .header-plan {
+    background-color: var(--enterpriseplan)
+}
+
+.enterprise-plan .content-plan ul li:before {
+    background-color: var(--enterpriseplan) !important
+}

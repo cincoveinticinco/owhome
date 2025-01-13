@@ -1,0 +1,21 @@
+.main-section {
+    grid-template-columns: 40% 50%;
+    gap: 5%;
+    align-items: center
+}
+
+.main-section p {
+    margin-bottom: 2rem
+}
+
+.sub-section {
+    grid-template-columns: 40% 60%
+}
+
+.sub-section p {
+    margin: 0
+}
+
+.separate-title {
+    padding-left: 5rem
+}

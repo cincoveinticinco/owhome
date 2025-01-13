@@ -1,0 +1,175 @@
+section {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0rem
+}
+
+.half-text {
+    width: 60%;
+    margin-bottom: 2rem
+}
+
+.section-addons-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: -1rem;
+    margin-right: -1rem;
+    justify-items: center;
+    margin-bottom: .5rem
+}
+
+.section-addons-items .addon-item {
+    max-width: 260px;
+    width: 90%;
+    min-height: 300px;
+    perspective: 1000px
+}
+
+.section-addons-items .addon-item>.addon-item-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform .5s ease-in-out;
+    transform-style: preserve-3d;
+    border-radius: 28px;
+    background: #F8F8F8
+}
+
+.section-addons-items .addon-item>.addon-item-inner .addon-item-back,
+.section-addons-items .addon-item>.addon-item-inner .addon-item-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.section-addons-items .addon-item>.addon-item-inner .addon-item-back {
+    transform: rotateY(180deg)
+}
+
+.section-addons-items .addon-item:hover>.addon-item-inner {
+    transform: rotateY(180deg)
+}
+
+.section-addons-items .addon-item .header-addon {
+    border-radius: 28px 28px 0 0;
+    background-color: var(--blue);
+    padding: 1.5rem 0 1rem;
+    color: #fff;
+    position: relative
+}
+
+.section-addons-items .addon-item .header-addon .flag-header {
+    position: absolute;
+    right: 50%;
+    top: -18px;
+    transform: translate(50%);
+    background: var(--basicplan);
+    color: var(--blue);
+    padding: 9px;
+    box-sizing: border-box;
+    font-size: .75rem;
+    width: 140px;
+    text-align: center
+}
+
+.section-addons-items .addon-item .header-addon .flag-header.proplan-flag {
+    background: var(--proplan)
+}
+
+.section-addons-items .addon-item .header-addon .name-addon {
+    display: block;
+    padding-left: 1.5rem
+}
+
+.section-addons-items .addon-item .header-addon .name-addon h4 {
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: left
+}
+
+.section-addons-items .addon-item .header-addon .notice-price-addon {
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+    padding: 2rem 1.5rem
+}
+
+.section-addons-items .addon-item .header-addon .price-addon {
+    font-weight: 700;
+    font-size: 4.5rem;
+    text-align: center;
+    width: 100%;
+    display: block;
+    line-height: .9;
+    margin: 1rem auto;
+    letter-spacing: -2px
+}
+
+.section-addons-items .addon-item .header-addon .price-addon sup {
+    font-size: 60%
+}
+
+.section-addons-items .addon-item .header-addon .price-addon span {
+    font-size: .8rem;
+    display: block;
+    font-weight: 400;
+    letter-spacing: 0;
+    margin-top: 12px
+}
+
+.section-addons-items .addon-item .header-addon .button {
+    margin: 0 auto;
+    display: block;
+    max-width: 180px
+}
+
+.section-addons-items .addon-item .content-addon {
+    width: 85%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    text-align: left
+}
+
+.section-addons-items .addon-item .content-addon ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.section-addons-items .addon-item .content-addon ul li {
+    position: relative;
+    padding-left: 1.3rem;
+    font-size: .85rem;
+    margin-bottom: 2px
+}
+
+.section-addons-items .addon-item .content-addon ul li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: var(--cyan);
+    border-radius: 50%;
+    left: 0;
+    bottom: 50%;
+    transform: translateY(50%)
+}
+
+.section-center {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    max-width: 700px;
+    margin: 0 auto;
+    align-items: center
+}
+
+.welcome-content {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center
+}

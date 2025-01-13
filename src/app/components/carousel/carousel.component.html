@@ -1,0 +1,5 @@
+<ngx-slick-carousel [config]="configuration" class="wrap-carousel">
+    @for(image of images; track image){
+        <div ngxSlickItem class="carousel-cell"><img [src]="image.src"  height="320" [alt]="image.alt"></div>    
+    }
+</ngx-slick-carousel>
