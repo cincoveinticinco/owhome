@@ -173,3 +173,10 @@ section {
     margin: 0 auto;
     text-align: center
 }
+
+@media only screen and (max-width: 640px) {
+    .section-addons-items {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}

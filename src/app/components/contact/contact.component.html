@@ -1,0 +1,21 @@
+<div  class="modal-contact">
+    <button (click)="closeModal()" class="close-button" mat-icon-button aria-label="Close contact modal">
+        <mat-icon>close</mat-icon>
+      </button>
+    <div  class="modal-contact-content">
+        <h2>Contact us</h2>
+        <p>Send us a message, we will be happy to assist you</p>
+        <form [formGroup]="contactForm" (ngSubmit)="submit()">
+            <label>
+                Your Email 
+                <input  name="email" id="email" type="email" formControlName="email">
+            </label>
+            <label>
+                Message 
+                <textarea  name="message" id="message" formControlName="message" ></textarea>
+            </label>
+            <re-captcha formControlName="captcha" />
+                
+            <button  class="button wide" [disabled]="contactForm.invalid">SEND MESSAGE</button></form>
+    </div>
+</div>

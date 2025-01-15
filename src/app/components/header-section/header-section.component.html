@@ -6,7 +6,7 @@
                 <p> OneWrapp is a cloud based software that allows to have all the
                     information of your projects centralized, reducing duplicity, increasing time effectiveness and
                     visibility of the information. OneWrapp allows to access your projects data safely and in real time.
-                </p><a class="button dark with-border wide">Request a demo trial</a>
+                </p><a (click)="contactService.stateConctactForm.set(true)" class="button dark with-border wide">Request a demo trial</a>
             </div>
         </div>
         
@@ -21,7 +21,7 @@
 
 <section [@fade]="{value: '', params: {delay: 900}}" class="cyan-section fade-animation">
     <div class="section-wrapp split-two-section sub-section">
-        <div class="right-zero">
+        <div class="right-zero small-default-padding">
             <p> Production teams can overview and track a production from start to end; organize their resources in one
                 place; automate processes; execute and monitor production workflows; manage crew, talent and assets;
                 share and distribute information securely; and analyze production data in real time with customized

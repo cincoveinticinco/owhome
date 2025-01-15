@@ -146,3 +146,10 @@ section {
 .enterprise-plan .content-plan ul li:before {
     background-color: var(--enterpriseplan) !important
 }
+
+@media only screen and (max-width: 640px) {
+    .section-plans-items {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}

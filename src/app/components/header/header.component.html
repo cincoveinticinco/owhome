@@ -1,20 +1,12 @@
 <header>
     <div class="logo-header"><i class="onewrapp-white-logo"></i></div>
+    <div class="menu-button">
+        <button (click)="drawerToggle()" mat-icon-button aria-label="Mobile menu button">
+            <mat-icon>menu</mat-icon>
+          </button>
+    </div>
     <div @fade class="navigation-header">
-        <nav>
-            <ul>
-                <li class="fade-group-animation">
-                    <a fragment="modules" href="/#modules">MODULES</a>
-                </li>
-                <li class="fade-group-animation">
-                    <a fragment="pricing" href="/#pricing">PRICING</a></li>
-                <li class="fade-group-animation">
-                    <a fragment="add-ons" href="/#add-ons">ADD-ONS</a></li>
-                <li class="fade-group-animation">
-                    <a>CONTACT</a>
-                </li>
-            </ul>
-        </nav>
+        <app-navigation />
     </div>
     <div class="login-header">
         <a target="_blank" href="https://api.onewrapp.com" class="button with-border">LOGIN</a>

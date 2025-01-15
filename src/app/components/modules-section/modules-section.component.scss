@@ -85,3 +85,31 @@ section {
     white-space: nowrap;
     font-size: .6rem
 }
+
+@media only screen and (max-width: 640px) {
+    .section-module-items {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+
+       
+    }
+
+    .half-text{
+        width: 100%;
+    }
+
+    .section-center{
+        grid-template-columns: 1fr;
+
+        br{
+            display: none;
+        }
+    }
+
+    .rocket-icon__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+}

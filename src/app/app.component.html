@@ -1,8 +1,23 @@
-<app-header />
-<main>
-  <app-header-section/>
-  <app-modules-section id="modules"/>
-  <app-plans-section id="pricing"/>
-  <app-addons-section id="add-ons" />
-</main>
-<app-footer/>
+
+@if(contactService.stateConctactForm()){
+  <app-contact (close)="contactService.stateConctactForm.set(false)"/>
+}
+
+<app-header (toggleMenu)="drawer.toggle()"/>
+<mat-sidenav-container >
+  <mat-sidenav #drawer mode="over" fixedInViewport="true" fixedTopGap="74">
+    <app-navigation (endNavigation)="drawer.toggle()"/>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <main>
+      
+      <app-header-section/>
+      <app-modules-section id="modules"/>
+      <app-plans-section id="pricing"/>
+      <app-addons-section id="add-ons" />
+      
+    </main>
+    
+    <app-footer/>
+  </mat-sidenav-content>
+</mat-sidenav-container>

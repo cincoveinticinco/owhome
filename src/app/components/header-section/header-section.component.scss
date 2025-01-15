@@ -19,3 +19,15 @@
 .separate-title {
     padding-left: 5rem
 }
+
+@media only screen and (max-width: 640px) {
+    .split-two-section{
+      grid-template-columns: 1fr;
+    }
+
+
+    .separate-title {
+        padding: 0 1.5rem;
+        margin: 2rem auto;
+    }
+}

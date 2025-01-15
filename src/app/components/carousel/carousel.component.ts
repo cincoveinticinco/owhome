@@ -1,6 +1,6 @@
-import { isPlatformBrowser } from '@angular/common';
-import { AfterViewInit, Component, ElementRef, inject, Input, PLATFORM_ID, ViewChild } from '@angular/core';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { NgFor } from '@angular/common';
+import { Component,  Input } from '@angular/core';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
 export type CarouselImagesItem = {
   src: string,
@@ -8,13 +8,13 @@ export type CarouselImagesItem = {
 }
 
 @Component({
-  selector: 'app-carousel',
-  standalone: true,
-  imports: [SlickCarouselModule],
-  templateUrl: './carousel.component.html',
-  styleUrl: './carousel.component.scss'
+    selector: 'app-carousel',
+    standalone: true,
+    imports: [NgbCarouselModule],
+    templateUrl: './carousel.component.html',
+    styleUrl: './carousel.component.scss'
 })
-export class CarouselComponent {
+export class HeaderCarouselComponent {
   @Input() images: CarouselImagesItem[] = []
 
   configuration = {

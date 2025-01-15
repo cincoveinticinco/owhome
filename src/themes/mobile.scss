@@ -1,0 +1,19 @@
+@media only screen and (max-width: 640px) {
+  .split-two-section{
+    grid-template-columns: 1fr;
+  }
+
+  h3{
+    line-height: 1;
+  }
+
+  p{
+    font-size: 1rem !important;
+  }
+
+  .split-two-section>div.right-zero{
+    &.small-default-padding{
+        padding: 0 1.5rem;
+    }
+  }
+}

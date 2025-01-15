@@ -1,3 +1,6 @@
+@import "bootstrap/scss/bootstrap";
+@import url(themes/mobile.scss);
+
 /* You can add global styles to this file, and also import other style files */
 :root {
     --cyan: #4fc3f7;
@@ -11,7 +14,10 @@
     --oneplan: #DE93FF;
     --basicplan: #FFF07C;
     --proplan: #19CFF9;
-    --enterpriseplan: #00FFB1
+    --enterpriseplan: #00FFB1;
+    --mat-sidenav-container-width: 200px;
+    --bs-body-line-height: normal;
+
 }
 
 html {
@@ -29,23 +35,27 @@ body {
 
 p {
     color: var(--dark-gray);
-    font-size: 1.1rem
+    font-size: 1.1rem;
+    margin-top: 17.6px
 }
 
 h2 {
     font-size: 2.8rem;
-    margin: 0
+    margin: 0;
+    font-weight: 700;
 }
 
 h3 {
     font-size: 2.2rem;
-    margin: 0
+    margin: 0;
+    font-weight: 700;
 }
 
 h4 {
     font-size: 2rem;
     color: var(--cyan);
-    margin: 0
+    margin: 0;
+    font-weight: 700;
 }
 
 h4 span {
@@ -251,4 +261,11 @@ figure img {
 .align-right{
     
     align-items: end;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; padding-top: 74px; }
+
+.mat-drawer {
+    width: 200px !important;
+    border-radius: 0 !important;
 }

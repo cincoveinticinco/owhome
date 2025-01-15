@@ -1,0 +1,38 @@
+
+ul {
+    list-style: none;
+    text-align: right;
+    margin: 0;
+    font-size: .85rem;
+    font-weight: 700
+}
+
+ul li {
+    display: inline-block;
+    padding: 0 1rem
+}
+
+ul a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--blue)
+}
+
+ul a:hover {
+    text-decoration: underline
+}
+
+@media only screen and (max-width: 640px) {
+   
+    ul {
+       
+        padding-top: 1rem;
+
+        text-align: left;
+        li {
+            display: block;
+            padding: 0.8rem 0
+        }
+    }
+    
+}

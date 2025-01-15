@@ -1,0 +1,69 @@
+.modal-contact {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #fff;
+    z-index: 99999999;
+    overflow: hidden;
+    
+    --mat-sys-label-large-size: 4rem;
+}
+
+.modal-contact .close-button {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    height: 5rem;
+    width: 5rem;
+
+    .mat-icon{
+        height: 4rem;
+        width: 4rem;
+    }
+    .material-icons{
+        font-size: 4rem;
+    }
+}
+
+.modal-contact-content {
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    width: 450px
+}
+
+.modal-contact-content form label {
+    display: block;
+    font-size: .8rem;
+    color: var(--blue);
+    text-align: left;
+    font-weight: 700
+}
+
+.modal-contact-content form input,
+.modal-contact-content form textarea {
+    border: 1px solid var(--blue);
+    width: 100%;
+    margin: 5px 0 1rem;
+    padding: .8rem;
+    box-sizing: border-box
+}
+
+.modal-contact-content form textarea {
+    height: 170px
+}
+
+.modal-contact-content form re-captcha {
+    display: block;
+    margin-bottom: 1rem
+}
+
+@media only screen and (max-width: 640px) {
+    .modal-contact-content {
+        width: 90%
+    }
+}
