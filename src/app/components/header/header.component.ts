@@ -7,7 +7,6 @@ import { NavigationComponent } from '../navigation/navigation.component';
 
 @Component({
     selector: 'app-header',
-    standalone: true,
     imports: [
         MatIconModule,
         MatButtonModule,

@@ -9,7 +9,6 @@ export type CarouselImagesItem = {
 
 @Component({
     selector: 'app-carousel',
-    standalone: true,
     imports: [NgbCarouselModule],
     templateUrl: './carousel.component.html',
     styleUrl: './carousel.component.scss'

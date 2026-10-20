@@ -3,7 +3,6 @@ import { ContactService } from '../../services/contact.service';
 
 @Component({
     selector: 'app-plans-section',
-    standalone: true,
     imports: [],
     templateUrl: './plans-section.component.html',
     styleUrl: './plans-section.component.scss'

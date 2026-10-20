@@ -6,7 +6,6 @@ import { ContactService } from '../../services/contact.service';
 
 @Component({
     selector: 'app-header-section',
-    standalone: true,
     imports: [HeaderCarouselComponent],
     templateUrl: './header-section.component.html',
     styleUrl: './header-section.component.scss',
